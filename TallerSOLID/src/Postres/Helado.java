@@ -7,12 +7,13 @@ package Postres;
 
 import java.util.ArrayList;
 import Adicionales.Aderezo;
+import Procesos.AderezoHelado;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Helado{
+public class Helado implements AderezoHelado{
     private String sabor;
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
@@ -22,6 +23,18 @@ public class Helado{
         this.sabor=sabor;
         this.precioParcial = 7.85;
     }
+    
+	@Override
+    public void anadirAderezoHelado(Helado helado,Aderezo aderezo){
+        helado.getAderezos().add(aderezo);
+    }
+    
+    
+    @Override
+    public void quitarAderezoHelado(Helado helado,Aderezo aderezo){
+        helado.getAderezos().remove(aderezo);
+    }
+    
     
     public double calcularPrecioFinal(){
         double precioFinal;

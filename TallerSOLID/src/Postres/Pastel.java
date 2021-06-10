@@ -7,12 +7,13 @@ package Postres;
 
 import java.util.ArrayList;
 import Adicionales.Aderezo;
+import Procesos.AderezoPastel;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Pastel{
+public class Pastel implements AderezoPastel{
     private String sabor;
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
@@ -22,6 +23,17 @@ public class Pastel{
         this.sabor=sabor;
         this.precioParcial = 15.55;
     }
+    
+    @Override
+    public void anadirAderezoPastel(Pastel pastel,Aderezo aderezo){
+        pastel.getAderezos().add(aderezo);
+    }
+    
+    @Override
+    public void quitarAderezoPastel(Pastel pastel,Aderezo aderezo){
+        pastel.getAderezos().remove(aderezo);
+    }
+    
     
     public double calcularPrecioFinal(){
         double precioFinal;
@@ -37,8 +49,11 @@ public class Pastel{
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
+    
     public String showPrecioFinal(){
         return "Precio Final: $ " + calcularPrecioFinal();
     }
+
+
     
 }
