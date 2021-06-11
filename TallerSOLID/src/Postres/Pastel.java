@@ -21,14 +21,16 @@ public class Pastel extends Postre implements AderezoPastel{
         this.precioParcial = 15.55;
     }
     
-    @Override
-    public void anadirAderezoPastel(Pastel pastel,Aderezo aderezo){
-        pastel.getAderezos().add(aderezo);
-    }
     
     @Override
-    public void quitarAderezoPastel(Pastel pastel,Aderezo aderezo){
-        pastel.getAderezos().remove(aderezo);
+    public void anadirAderezoPastel(Aderezo aderezo){
+        this.getAderezos().add(aderezo);
+    }
+    
+    
+    @Override
+    public void quitarAderezoPastel(Aderezo aderezo){
+        this.getAderezos().remove(aderezo);
     }
     
 

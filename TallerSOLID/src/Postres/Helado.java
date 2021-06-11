@@ -22,15 +22,14 @@ public class Helado extends Postre implements AderezoHelado{
     }
     
 	@Override
-    public void anadirAderezoHelado(Helado helado,Aderezo aderezo){
-		System.out.println(helado.getAderezos());
-        helado.getAderezos().add(aderezo);
+    public void anadirAderezoHelado(Aderezo aderezo){
+        this.getAderezos().add(aderezo);
     }
     
     
     @Override
-    public void quitarAderezoHelado(Helado helado,Aderezo aderezo){
-        helado.getAderezos().remove(aderezo);
+    public void quitarAderezoHelado(Aderezo aderezo){
+        this.getAderezos().remove(aderezo);
     }
     
     
