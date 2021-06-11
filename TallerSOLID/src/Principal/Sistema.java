@@ -40,7 +40,7 @@ public class Sistema {
         
 
         System.out.println(pastel_chocolate);
-//        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
+        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         System.out.println(ManejadorDePrecio.showPrecioFinald(pastel_chocolate.getPrecioParcial(),pastel_chocolate.getAderezos()));
         
         
