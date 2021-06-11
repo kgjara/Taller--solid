@@ -13,11 +13,8 @@ import Procesos.AderezoPastel;
  *
  * @author Pedro Mendoza
  */
-public class Pastel implements AderezoPastel{
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
-    
+public class Pastel extends Postre implements AderezoPastel{
+
     public Pastel(String sabor){
         aderezos= new ArrayList<>();
         this.sabor=sabor;
@@ -39,10 +36,6 @@ public class Pastel implements AderezoPastel{
         double precioFinal;
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
-    }
-
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
     }
 
     @Override

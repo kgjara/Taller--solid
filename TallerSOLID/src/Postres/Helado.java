@@ -13,10 +13,7 @@ import Procesos.AderezoHelado;
  *
  * @author Pedro Mendoza
  */
-public class Helado implements AderezoHelado{
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
+public class Helado extends Postre implements AderezoHelado{
     
     public Helado(String sabor){
         aderezos= new ArrayList<>();
@@ -26,6 +23,7 @@ public class Helado implements AderezoHelado{
     
 	@Override
     public void anadirAderezoHelado(Helado helado,Aderezo aderezo){
+		System.out.println(helado.getAderezos());
         helado.getAderezos().add(aderezo);
     }
     
@@ -42,9 +40,6 @@ public class Helado implements AderezoHelado{
         return precioFinal;
     }
 
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
-    }
 
     @Override
     public String toString() {
