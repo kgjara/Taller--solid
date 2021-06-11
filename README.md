@@ -6,7 +6,8 @@ La clase ***OperacioneAderezo*** no cumple con el principio **SRP** por lo que s
 ![image](https://user-images.githubusercontent.com/74307558/121625846-e6db2400-ca39-11eb-81ca-29a2e86d6b76.png)
 
 
-![image](https://user-images.githubusercontent.com/74307558/121625853-e9d61480-ca39-11eb-9610-441cda9c8c78.png)
+![image](https://user-images.githubusercontent.com/74307558/121625994-2dc91980-ca3a-11eb-9e95-6be84625127b.png)
+
 
 
 ------------
