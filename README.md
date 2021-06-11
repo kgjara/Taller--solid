@@ -1,5 +1,5 @@
 # Taller-Solid
-##### Analice las siguientes partes del código, explique su análisis en el archivo README.md y corrija el código para que cumpla con los principios SOLID.
+#### Analice las siguientes partes del código, explique su análisis en el archivo README.md y corrija el código para que cumpla con los principios SOLID.
 La clase ***OperacioneAderezo*** no cumple con el principio **SRP** por lo que se opto por hacer 2 Interfaces ***AderezoHelado*** y ***AderezoPastel*** la cual cada una tiene el método añadir y quitar respectivamente.
 
 
@@ -12,5 +12,5 @@ La clase ***OperacioneAderezo*** no cumple con el principio **SRP** por lo que s
 
 ------------
 
-##### 2.Clases Procesos.OperacionesAderezo y Postre. ¿Es necesaria la clase OperacionesAderezo?. Se puede incluir dentro de postre un método para agregar un aderezo y para quitar un aderezo.
+#### 2.Clases Procesos.OperacionesAderezo y Postre. ¿Es necesaria la clase OperacionesAderezo?. Se puede incluir dentro de postre un método para agregar un aderezo y para quitar un aderezo.
 La clase ***OperacionesAderezo*** fue eliminada por que no cumplía el principio SRP  por lo cual se creo las interfaces ***AderezoHelado*** y ***AderezoPastel*** que manipulan el agregado y eliminado del aderezo respectivamente.
