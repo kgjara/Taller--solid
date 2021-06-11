@@ -12,5 +12,5 @@ La clase ***OperacioneAderezo*** no cumple con el principio **SRP** por lo que s
 
 ------------
 
-#####Clases Procesos.OperacionesAderezo y Postre. ¿Es necesaria la clase OperacionesAderezo?. Se puede incluir dentro de postre un método para agregar un aderezo y para quitar un aderezo.
+##### 2.Clases Procesos.OperacionesAderezo y Postre. ¿Es necesaria la clase OperacionesAderezo?. Se puede incluir dentro de postre un método para agregar un aderezo y para quitar un aderezo.
 La clase ***OperacionesAderezo*** fue eliminada por que no cumplía el principio SRP  por lo cual se creo las interfaces ***AderezoHelado*** y ***AderezoPastel*** que manipulan el agregado y eliminado del aderezo respectivamente.
