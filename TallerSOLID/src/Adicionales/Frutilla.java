@@ -9,6 +9,12 @@ package Adicionales;
  *
  * @author kenny
  */
-public class Frutilla {
+public class Frutilla extends Aderezo{
+
+	@Override
+	public void setNombre(String nombre) {
+		// TODO Auto-generated method stub
+		
+	}
     
 }

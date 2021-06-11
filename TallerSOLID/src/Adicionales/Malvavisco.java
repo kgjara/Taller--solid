@@ -9,6 +9,12 @@ package Adicionales;
  *
  * @author kenny
  */
-public class Malvavisco {
+public class Malvavisco extends Aderezo{
+
+	@Override
+	public void setNombre(String nombre) {
+		// TODO Auto-generated method stub
+		
+	}
     
 }

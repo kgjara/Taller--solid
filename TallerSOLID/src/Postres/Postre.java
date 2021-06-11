@@ -3,6 +3,8 @@ package Postres;
 import java.util.ArrayList;
 
 import Adicionales.Aderezo;
+import Procesos.AderezoHelado;
+import Procesos.AderezoPastel;
 
 public class Postre {
 	protected String sabor;
@@ -17,4 +19,7 @@ public class Postre {
     public double getPrecioParcial(){
     	return precioParcial;
     }
+    
+    
+
 }

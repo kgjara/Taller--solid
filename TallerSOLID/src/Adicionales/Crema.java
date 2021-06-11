@@ -9,6 +9,13 @@ package Adicionales;
  *
  * @author kenny
  */
-public class Crema {
+public  class Crema extends Aderezo{
+
+	@Override
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	
     
 }
